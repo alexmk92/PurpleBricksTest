@@ -1,0 +1,8 @@
+.status {
+
+    color: white;
+
+    &.red {
+        background-color: $brand-red-light;
+    }
+}

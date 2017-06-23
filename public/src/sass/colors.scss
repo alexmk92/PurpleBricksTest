@@ -1,0 +1,40 @@
+$brand-off-white: #f1f2f2;
+
+$brand-grey-light: #aaaaaa;
+$brand-grey-dark: #e8e8e8;
+
+$brand-red-light: #ed1c24;
+
+$brand-purple-dark: #550066;
+$brand-purple-light: #990099;
+
+$brand-blue-light: #00aeef;
+
+
+.red {
+    color: $brand-red-light;
+}
+
+.white {
+    color: $brand-off-white;
+}
+
+.grey-light {
+    color: $brand-grey-light;
+}
+
+.grey-dark {
+    color: $brand-grey-dark;
+}
+
+.purple-light {
+    color: $brand-purple-light;
+}
+
+.purple-dark {
+    color: $brand-purple-dark;
+}
+
+.blue-light {
+    color: $brand-blue-light;
+}

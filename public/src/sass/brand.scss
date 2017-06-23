@@ -1,0 +1,36 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+}
+
+h1, h2 {
+
+    color: $brand-purple-dark;
+
+    &.error {
+        color: $brand-red-light;
+    }
+}
+
+h1 {
+    font-size: '28px'
+}
+
+button {
+
+    background: $brand-grey-light;
+    color: white;
+
+    border-radius: 10px;
+    padding: 5px;
+
+    &.purple {
+        background: $brand-purple-light;   
+    }
+
+    &.blue {
+        background: $brand-blue-light;
+        padding: 5px 10px;
+    }
+
+}
