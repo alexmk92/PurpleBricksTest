@@ -1,8 +1,18 @@
 .status {
 
     color: white;
+    padding: 6px $horizontal-gutter;
+    font-size: 1.375em;
+    font-weight: 400;
+
+    strong {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 900;
+    }
 
     &.red {
+
         background-color: $brand-red-light;
     }
+
 }

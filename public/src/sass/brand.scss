@@ -1,36 +1,46 @@
-body {
+html, body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2 {
+#app {
 
-    color: $brand-purple-dark;
+    max-width: 100%;
 
-    &.error {
-        color: $brand-red-light;
-    }
-}
+    h1, h2 {
 
-h1 {
-    font-size: '28px'
-}
+        color: $brand-purple-dark;
+        font-weight: 900;
 
-button {
-
-    background: $brand-grey-light;
-    color: white;
-
-    border-radius: 10px;
-    padding: 5px;
-
-    &.purple {
-        background: $brand-purple-light;   
+        &.error {
+            color: $brand-red-light;
+        }
     }
 
-    &.blue {
-        background: $brand-blue-light;
-        padding: 5px 10px;
+    h1 {
+        font-size: 1.75em;
+    }
+
+    button {
+
+        background: $brand-grey-light;
+        color: white;
+
+        border-radius: 10px;
+        padding: 5px;
+
+        &.purple {
+            background: $brand-purple-light;   
+        }
+
+        &.blue {
+            background: $brand-blue-light;
+            padding: 5px 10px;
+        }
+
     }
 
 }
+

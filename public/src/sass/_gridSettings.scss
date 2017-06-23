@@ -1,0 +1,16 @@
+@import '~gridle';
+
+@include gridle_setup(
+    (
+        context: 12,
+        gutter-width: 0px,
+        direction: ltr,
+    )
+);
+
+@include gridle_register_state ( mobile, 
+    (
+        max-width: 480px,
+        gutter-width: 10px,
+    )
+);

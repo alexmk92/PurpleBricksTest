@@ -12,7 +12,7 @@ class NeogtiationCentre extends Component {
     render() {
         return (
 
-            <div className="container">
+            <div className="clear-top container">
                 <Status label={ 'Withdrawn' } color={ 'red' } />
             </div>
 

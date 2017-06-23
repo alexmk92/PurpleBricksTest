@@ -60,7 +60,7 @@ module.exports = {
         hot: true, 
         publicPath: '/dist/js',
         contentBase: `${__dirname}/`,
-        port: 3000,
+        port: 1337,
         inline: true,
     }
 

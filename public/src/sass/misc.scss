@@ -1,0 +1,47 @@
+$horizontal-gutter: 40px;
+$vertical-gutter: 25px;
+
+.pull-text {
+
+    &.left {
+        text-align: left;
+    }
+
+    &.right {
+        text-align: right;
+    }
+
+    &.bottom {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+
+}
+
+.alignee {
+    
+    position: relative;
+    height: 100%;
+
+    .aligner {
+
+        position: absolute;
+        width: 100%;
+        
+        &.bottom {
+            bottom: 0;
+        }
+
+        &.top {
+            top: 0;
+        }
+
+    }
+
+}
+
+.clear-top {
+    
+    margin-top: 45px;
+
+}
