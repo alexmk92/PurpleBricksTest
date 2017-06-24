@@ -23,24 +23,142 @@ html, body {
         font-size: 1.75em;
     }
 
+    h2 {
+        font-size: 1.375em;
+    }
+
+    .number {
+        
+        color: black;
+        font-size: 1.76575em;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+
+        &.purple {
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 900;
+            color: $brand-purple-dark;
+            font-size: 1.75em;
+        }
+    }
+
+    .text {
+
+        font-size: 0.9365em;
+
+        &.arial {
+            font-family: Arial, sans-serif;
+
+            &.bold {
+                font-weight: bold;
+            }
+        }
+
+        &.large {
+            font-size: 1.375em;
+        }
+
+        &.medium {
+            font-size: 1.0625em;
+
+            @include gridle_state ( mobile ) {
+                font-size: 1.15em;
+                line-height: 1.2em;
+            }
+        }
+
+        &.dull {
+            color: $brand-grey-dark;
+        }
+
+        &.small {
+            font-size: 0.6875em;
+
+            @include gridle_state ( mobile ) {
+                font-size: 0.8em;
+            }
+        }
+
+        &.purple {
+            color: $brand-purple-dark;
+        }
+
+        &.anchor {
+
+            position: absolute; 
+
+            &.bottom {
+                bottom: 0;
+            }
+
+            &.right {
+                right: 0;
+            }
+
+            &.left {
+                left: 0;
+            }
+
+            &.top {
+                top: 0;
+            }
+
+            @include gridle_state ( mobile ) {
+                position: relative;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
     button {
 
-        background: $brand-grey-light;
+        background: $brand-grey-dark;
         color: white;
 
-        border-radius: 10px;
-        padding: 5px;
+        outline: none;
+        border: none;
+
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9375em;
+
+        border-radius: 7px;
+        padding: 6px 10px;
 
         &.purple {
             background: $brand-purple-light;   
+
+            font-size: 1.0625em;
         }
 
         &.blue {
             background: $brand-blue-light;
+
+            font-size: 1.375em;
             padding: 5px 10px;
+        }
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        @include gridle_state ( mobile ) {
+            width: 100%;
+            float: left;
+            margin: 10px 0;
         }
 
     }
 
+    hr {
+        opacity: 0.5;
+        margin: 12px 0;
+    } 
+
+    @include gridle_state ( mobile tablet ) {
+        
+        margin: 0 20px;
+    }
 }
 

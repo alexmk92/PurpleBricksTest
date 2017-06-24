@@ -8,9 +8,12 @@
     )
 );
 
-@include gridle_register_state ( mobile, 
-    (
-        max-width: 480px,
-        gutter-width: 10px,
-    )
-);
+@include gridle_register_state ( mobile , (
+    max-width : 620px,
+) );
+
+@include gridle_register_state ( tablet , (
+    min-width : 621px,
+    max-width : 900px,
+) ) ;
+

@@ -16,6 +16,45 @@ $vertical-gutter: 25px;
         vertical-align: bottom;
     }
 
+    @include gridle_state ( mobile ) {
+        &.right {
+            text-align: left;
+        }
+    }
+
+}
+
+.pull {
+
+    &.right {
+        float: right;
+
+        @include gridle_state ( mobile ) {
+            float: left;
+            width: 100%;
+        }
+    }
+
+    &.left {
+        float: left;
+    }
+
+}
+
+.v-align {
+
+    &.top {
+        vertical-align: top;
+    }
+
+    &.bottom {
+        vertical-align: bottom;
+    }
+
+    &.middle {
+        vertical-align: middle;
+    }
+
 }
 
 .alignee {

@@ -1,0 +1,216 @@
+.widget {
+
+    margin: 15px 0;
+    padding: 18px 40px;
+    border: 1px solid $brand-grey-dark;
+
+    img {
+        @include gridle_state ( mobile ) {
+            width: 100%;
+        }
+    }
+
+    &.collapsable {
+        min-height: 0px;
+    }
+
+    &.withdrawn {
+        background-color: $brand-grey-light;
+        color: $brand-red-light;
+        border: 2px solid $brand-red-light;
+
+        h1, p {
+            color: $brand-red-light !important;
+        }
+    }
+
+    &.purple {
+        border: 1px solid $brand-purple-light;
+    }
+
+    &.red {
+        border: 2px solid $brand-red-light;
+        color: $brand-red-light;
+    }
+
+    .title {
+        margin-bottom: 5px;
+    }
+
+    .details {
+        display: inline;
+        padding: 0 10px;
+
+        font-weight: 900;
+        font-family: "Source Sans Pro";
+        font-size: 1.25em;
+        color: $brand-purple-dark;
+
+        @include gridle_state ( mobile ) {
+            width: 100%;
+            padding: 0;
+            margin: 20px 0;
+        }
+    }
+
+    .number {
+        margin: 5px 0;
+    }
+
+    .hide-button {
+        
+        margin-top: -22px;
+        font-weight: bold;
+        font-size: 0.9375em;
+        color: $brand-purple-light;
+
+        &.right {
+            float: right;
+        }
+
+        @include gridle_state (mobile) {
+            display: none;
+        }
+    }
+
+    #negotiator {
+        
+        padding-left: 30px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        .currency {
+            font-size: 2.474375em;
+            color: $brand-grey-dark;
+            font-weight: bold;
+        }
+
+        label {
+            margin-left: -30px;
+        }
+
+        input {
+            font-size: 1.7675em;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid $brand-grey-dark;
+            width: 260px;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+
+        .form-area {
+            margin: 10px 0 0 0;
+        }
+
+        @include gridle_state ( mobile ) {
+            padding: 0;
+             
+             label {
+                 margin: 0;
+             }
+
+             input {
+                 width: 50%;
+                 margin: 0 0 0 10px;
+                font-size: 1.5em;
+             }
+        }
+
+    }
+
+    #negotiator-panel {
+
+        @include gridle_state( mobile tablet ) {
+            div {
+
+                p {
+                    width: 100%;
+                    margin-bottom: 14px;
+                    text-align: left;
+                }
+
+            }            
+        }
+
+        @include gridle_state( mobile ) {
+            &.widget {
+                padding: 18px 0 !important;
+            }
+        }
+
+    }
+
+    #buyer-details {
+
+        font-family: Arial, sans-serif;
+        font-size: 1.0625em;
+        font-weight: 100;
+        color: $brand-off-black;
+
+        line-height: 1.4em;
+
+        label {
+            color: $brand-purple-dark;
+            display: inline-block;
+            width: 150px;
+        }
+
+        @include gridle_state ( mobile ) {
+            span {
+                display: block;
+            }
+
+            label {
+                font-weight: bold;
+                width: auto;
+                display: block;
+            }
+        }
+    }
+
+    footer {
+        position: relative;
+    }
+
+    @include gridle_state ( mobile ) {
+        height: auto !important;
+        
+    }
+}
+
+.spacer {
+    width: 48.3%;
+    display: inline-block;
+    clear: both;
+    vertical-align: top;
+
+    .widget {
+        height: 200px;
+    }
+    
+
+    &.right {
+        margin-right: 1.7%;
+    }
+
+    &.left {
+        margin-left: 1.7%;
+    }
+
+    @include gridle_state (  mobile tablet  ) {
+        width: 100%;
+        padding: 0;
+        
+        &.left {
+            margin-left: 0;
+        }
+
+        &.right {
+            margin-right: 0;
+        }
+    }
+
+
+}

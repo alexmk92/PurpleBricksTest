@@ -1,3 +1,4 @@
+@import 'reset';
 @import 'fonts';
 @import 'grid';
 @import 'colors';
@@ -6,4 +7,4 @@
 
 @import './components/Status';
 @import './components/Header';
-@import './components/ImageBox';
+@import './components/Widget.scss';
