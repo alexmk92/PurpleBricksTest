@@ -14,7 +14,7 @@ class NeogtiationCentre extends Component {
     render() {
         return (
 
-            <div className="clear-top container">
+            <div className="clear-top container page-wrap">
                 <Status label={ 'Withdrawn' } color={ 'red' } />
 
                 <PropertyWidget {...seedData.propertyData} />

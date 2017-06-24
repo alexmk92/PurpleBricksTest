@@ -1,0 +1,100 @@
+#app {
+    
+}
+
+#footer {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    left: 0;
+
+    background-color: #545353;
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+
+    ul {
+        margin-top: 12px;
+        list-style: none;
+
+        &.social {
+            li {
+                border-right: none !important;
+                font-size: 1.1em;
+                padding: 0 10px;
+                
+                i {
+                    color: $brand-grey-light;
+
+                    &:hover {
+                        color: $brand-blue-light;
+                    }
+                }
+            }
+        }
+
+        li {
+            display: inline;
+            padding: 0 15px;
+
+            &:first-child {
+                padding-left: 0px;
+            }
+            &:nth-child(n+1) {
+                border-right: 1px solid white;
+            }
+            &:last-child {
+                border-right: none;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    color: $brand-blue-light;
+                }
+            }
+        }
+    }
+
+    @include gridle_state ( mobile ) {
+
+        height: auto;
+        bottom: -200px;
+
+        .container {
+
+            padding: 10px 20px;
+           
+            .pull {
+                &.left {  float: none !important; }
+                &.right {  float: none !important; }
+            }
+            
+            ul {
+                width: 100%;
+
+                &.social {
+                    border-top: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 10px 0;
+                    
+                    li {
+                        width: 20%;
+                    }
+                }
+
+                li {
+                    text-align: center;
+                    padding: 10px 0;
+                    display: inline-block;
+                    width: 33%;
+                    border-right: none !important; 
+
+                }
+            }
+        }
+    }
+}
