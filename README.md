@@ -12,11 +12,11 @@ I tested this in IE Edge and Chrome (latest), then I used the IE Edge emulator t
 ### Notable improvements
 Due to the time constraints there are several things that I would do differently with more time: 
 
-    - Each 'Widget' section uses a header with a collapse button on it, this was introduced later as the brief made it sound like each section should be collapsable but the PSD didn't have a hide button for each section.   I would create another React component called 'Header' inside of the 'Widget' folder that accepts a title prop and a boolean to determine if a hide button should be shown.
+- Each 'Widget' section uses a header with a collapse button on it, this was introduced later as the brief made it sound like each section should be collapsable but the PSD didn't have a hide button for each section.   I would create another React component called 'Header' inside of the 'Widget' folder that accepts a title prop and a boolean to determine if a hide button should be shown.
 
-    - The Dropify module currently operates on a per case basis for each DOM node (there is one instance of Dropify for each widget).  Although the memory profile is low it would be a significant optimization to allow Dropify to handle multiple DOM nodes and have a shared instance attached to the container which is passed own through props (alternatively if we attached this to redux we could map it to dispatch so its easily accessible in sub components)
+- The Dropify module currently operates on a per case basis for each DOM node (there is one instance of Dropify for each widget).  Although the memory profile is low it would be a significant optimization to allow Dropify to handle multiple DOM nodes and have a shared instance attached to the container which is passed own through props (alternatively if we attached this to redux we could map it to dispatch so its easily accessible in sub components)
 
-    - Given the time constraints I only finished writing UI tests for two components, if I had more time I would have written a suite of tests for each component, the existing tests can be ran via `npm run test`
+- Given the time constraints I only finished writing UI tests for two components, if I had more time I would have written a suite of tests for each component, the existing tests can be ran via `npm run test`
 
-    - I would refactor all of the SASS code.  Although it works it isn't as moduler as it could be.  I would create a separate SASS file for each widget so that all of the widget styles aren't tied up inside of one widget file.  This would be easier to maintain and will be compiled to a minified bundle anyway.
+- I would refactor all of the SASS code.  Although it works it isn't as moduler as it could be.  I would create a separate SASS file for each widget so that all of the widget styles aren't tied up inside of one widget file.  This would be easier to maintain and will be compiled to a minified bundle anyway.
 
